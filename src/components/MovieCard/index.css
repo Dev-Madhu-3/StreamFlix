@@ -1,0 +1,8 @@
+.movie-card-container {
+  width: 150px;
+  height: 250px;
+}
+.movie-card-image {
+  width: 100%;
+  height: 80%;
+}
