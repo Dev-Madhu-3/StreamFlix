@@ -2,43 +2,12 @@
 }
 .responsive-container {
   padding: 20px;
+  background-color: rgb(155, 155, 255);
 }
-.movie-card-container {
+.home-popular-movies-container {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  width: 300px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.home-heading {
-}
-
-.poster {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.movie-details {
-  text-align: center;
-}
-
-.title {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.description {
-  font-size: 1rem;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-.rating {
-  font-size: 1.2rem;
-  color: #ffbf00;
+  flex-wrap: wrap;
+  gap: 30px;
 }

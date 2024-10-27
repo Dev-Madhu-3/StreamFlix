@@ -1,15 +1,14 @@
 import {useState, useEffect} from 'react'
-import './index.css'
 import Navbar from '../Navbar'
 import MovieCard from '../MovieCard'
 
-function Home() {
+function TopratedMovies() {
   const [MoviesList, updateMoviesList] = useState([])
 
   const apiCall = async () => {
     try {
       const response = await fetch(
-        'https://api.themoviedb.org/3/movie/popular?api_key=685fff8bd9824a25a6727a6555b1354c&language=en-US&page=1',
+        'https://api.themoviedb.org/3/movie/top_rated?api_key=685fff8bd9824a25a6727a6555b1354c&language=en-US&page=1',
       )
       if (response.ok) {
         const data = await response.json()
@@ -29,7 +28,7 @@ function Home() {
     <div className="home-container">
       <Navbar />
       <div className="responsive-container">
-        <h1 className="home-heading">Popular movies</h1>
+        <h1 className="home-heading">Top Rated Movies</h1>
         <div className="home-popular-movies-container">
           {MoviesList.map(eachItem => (
             <MovieCard key={eachItem.id} movieDetails={eachItem} />
@@ -40,4 +39,4 @@ function Home() {
   )
 }
 
-export default Home
+export default TopratedMovies

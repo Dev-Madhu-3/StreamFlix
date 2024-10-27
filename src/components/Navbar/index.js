@@ -7,7 +7,7 @@ function Navbar() {
     <nav className="navbar-container">
       <div className="navbar-logo-links-container">
         <div className="navbar-logo">StreamFlix</div>
-        <Link className="nav-item" to="/popular">
+        <Link className="nav-item" to="/">
           <div>Popular</div>
         </Link>
         <Link className="nav-item" to="/toprated">
@@ -19,7 +19,7 @@ function Navbar() {
       </div>
 
       <form className="navbar-search-container">
-        <input type="search" className="search-bar" />
+        <input type="search" placeholder="Search" className="search-bar" />
         <button className="search-bar-button" type="submit">
           <RiSearchLine className="search-bar-icon" />
         </button>
