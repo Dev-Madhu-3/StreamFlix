@@ -25,14 +25,14 @@ function SearchedMovies(props) {
 
   useEffect(() => {
     apiCall()
-  }, [])
+  }, [quaryValue])
 
   return (
     // 685fff8bd9824a25a6727a6555b1354c
     <div className="home-container">
       <Navbar />
       <div className="responsive-container">
-        <h1 className="home-heading">{`Reasult for '${quaryValue}'`}</h1>
+        <h1 className="home-heading">`Search Result Fro '${quaryValue}'`</h1>
         <div className="home-popular-movies-container">
           {MoviesList.map(eachItem => (
             <MovieCard key={eachItem.id} movieDetails={eachItem} />
