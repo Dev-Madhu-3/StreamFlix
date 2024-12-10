@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/StreamFlix/static/css/main.1f9fb01e.chunk.css",
-    "main.js": "/StreamFlix/static/js/main.e0137d72.chunk.js",
-    "main.js.map": "/StreamFlix/static/js/main.e0137d72.chunk.js.map",
+    "main.js": "/StreamFlix/static/js/main.a8934cbe.chunk.js",
+    "main.js.map": "/StreamFlix/static/js/main.a8934cbe.chunk.js.map",
     "runtime-main.js": "/StreamFlix/static/js/runtime-main.4a805ee5.js",
     "runtime-main.js.map": "/StreamFlix/static/js/runtime-main.4a805ee5.js.map",
     "static/js/2.e9415a26.chunk.js": "/StreamFlix/static/js/2.e9415a26.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.4a805ee5.js",
     "static/js/2.e9415a26.chunk.js",
     "static/css/main.1f9fb01e.chunk.css",
-    "static/js/main.e0137d72.chunk.js"
+    "static/js/main.a8934cbe.chunk.js"
   ]
 }
