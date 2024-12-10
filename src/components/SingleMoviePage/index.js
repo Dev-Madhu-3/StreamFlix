@@ -88,7 +88,7 @@ const SingleMoviePage = props => {
             <div className="details-con">
               <p>
                 Duration:{' '}
-                <span className="duration">{`${movieData.runtime} M`}</span>
+                <span className="duration">{`${movieData.runtime} Min`}</span>
               </p>
               <p>
                 Release Date:{' '}
@@ -101,8 +101,8 @@ const SingleMoviePage = props => {
                 Rating: <span className="duration">{movieData.rating}</span>
               </p>
               <p>
-                Budget:{' '}
-                <span className="duration">{`${movieData.budget}$`}</span>
+                Budget(usd):
+                <span className="duration">{` ${movieData.budget} $`}</span>
               </p>
             </div>
           </div>

@@ -32,7 +32,7 @@ function SearchedMovies(props) {
     <div className="home-container">
       <Navbar />
       <div className="responsive-container">
-        <h1 className="home-heading">`Search Result Fro '${quaryValue}'`</h1>
+        <h1 className="home-heading">{`Search Result Fro '${quaryValue}'`}</h1>
         <div className="home-popular-movies-container">
           {MoviesList.map(eachItem => (
             <MovieCard key={eachItem.id} movieDetails={eachItem} />
