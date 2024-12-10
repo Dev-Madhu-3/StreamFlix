@@ -1,8 +1,14 @@
 import './index.css'
+import {Link} from 'react-router-dom'
 
 function MovieCard(props) {
   const {movieDetails} = props
-  const {title, posterPath, voteAverage} = movieDetails
+  const {
+    title,
+    poster_path: posterPath,
+    vote_average: voteAverage,
+    id,
+  } = movieDetails
   return (
     <div className="movie-card-container">
       <img
@@ -18,9 +24,9 @@ function MovieCard(props) {
           Rating:<span className="rating-span">{` ${voteAverage} / 10`}</span>{' '}
         </p>
 
-        <button type="button" className="details-btn">
+        <Link to={`/${id}`} className="details-btn">
           More Details
-        </button>
+        </Link>
       </div>
     </div>
   )

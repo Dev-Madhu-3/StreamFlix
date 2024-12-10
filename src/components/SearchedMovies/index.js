@@ -1,20 +1,22 @@
 import {useState, useEffect} from 'react'
-import './index.css'
 import Navbar from '../Navbar'
 import MovieCard from '../MovieCard'
 
-function Home() {
+function SearchedMovies(props) {
   const [MoviesList, updateMoviesList] = useState([])
+  const {location} = props
+  const {search} = location
+  const extractQuary = new URLSearchParams(search)
+  const quaryValue = extractQuary.get('Q')
 
   const apiCall = async () => {
     try {
       const response = await fetch(
-        'https://api.themoviedb.org/3/movie/popular?api_key=685fff8bd9824a25a6727a6555b1354c&language=en-US&page=1',
+        `https://api.themoviedb.org/3/search/movie?api_key=685fff8bd9824a25a6727a6555b1354c&language=en-US&query=${quaryValue}&page=1`,
       )
       if (response.ok) {
         const data = await response.json()
         updateMoviesList(data.results)
-        console.log(data.results)
       }
     } catch (error) {
       console.log(`Problem: ${error.message}`)
@@ -30,7 +32,7 @@ function Home() {
     <div className="home-container">
       <Navbar />
       <div className="responsive-container">
-        <h1 className="home-heading">Popular movies</h1>
+        <h1 className="home-heading">{`Reasult for '${quaryValue}'`}</h1>
         <div className="home-popular-movies-container">
           {MoviesList.map(eachItem => (
             <MovieCard key={eachItem.id} movieDetails={eachItem} />
@@ -41,4 +43,4 @@ function Home() {
   )
 }
 
-export default Home
+export default SearchedMovies

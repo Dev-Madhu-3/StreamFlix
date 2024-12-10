@@ -1,8 +1,20 @@
 import './index.css'
-import {Link} from 'react-router-dom'
+import {Link, withRouter} from 'react-router-dom'
 import {RiSearchLine} from 'react-icons/ri'
+import {useState} from 'react'
 
-function Navbar() {
+function Navbar(props) {
+  const [searchInput, setSearchInput] = useState('')
+  const onInputChange = event => {
+    setSearchInput(event.target.value)
+  }
+  const onSearch = event => {
+    const {history} = props
+    const {replace} = history
+    event.preventDefault()
+    replace(`search?Q=${searchInput}`)
+  }
+
   return (
     <nav className="navbar-container">
       <div className="navbar-logo-links-container">
@@ -18,8 +30,14 @@ function Navbar() {
         </Link>
       </div>
 
-      <form className="navbar-search-container">
-        <input type="search" placeholder="Search" className="search-bar" />
+      <form className="navbar-search-container" onSubmit={onSearch}>
+        <input
+          type="search"
+          value={searchInput}
+          onChange={onInputChange}
+          placeholder="Search"
+          className="search-bar"
+        />
         <button className="search-bar-button" type="submit">
           <RiSearchLine className="search-bar-icon" />
         </button>
@@ -28,4 +46,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default withRouter(Navbar)
