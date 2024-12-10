@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/StreamFlix/static/css/main.1f9fb01e.chunk.css",
-    "main.js": "/StreamFlix/static/js/main.a9d272e4.chunk.js",
-    "main.js.map": "/StreamFlix/static/js/main.a9d272e4.chunk.js.map",
+    "main.js": "/StreamFlix/static/js/main.e0137d72.chunk.js",
+    "main.js.map": "/StreamFlix/static/js/main.e0137d72.chunk.js.map",
     "runtime-main.js": "/StreamFlix/static/js/runtime-main.4a805ee5.js",
     "runtime-main.js.map": "/StreamFlix/static/js/runtime-main.4a805ee5.js.map",
-    "static/js/2.982813fe.chunk.js": "/StreamFlix/static/js/2.982813fe.chunk.js",
-    "static/js/2.982813fe.chunk.js.map": "/StreamFlix/static/js/2.982813fe.chunk.js.map",
+    "static/js/2.e9415a26.chunk.js": "/StreamFlix/static/js/2.e9415a26.chunk.js",
+    "static/js/2.e9415a26.chunk.js.map": "/StreamFlix/static/js/2.e9415a26.chunk.js.map",
     "index.html": "/StreamFlix/index.html",
     "static/css/main.1f9fb01e.chunk.css.map": "/StreamFlix/static/css/main.1f9fb01e.chunk.css.map",
-    "static/js/2.982813fe.chunk.js.LICENSE.txt": "/StreamFlix/static/js/2.982813fe.chunk.js.LICENSE.txt"
+    "static/js/2.e9415a26.chunk.js.LICENSE.txt": "/StreamFlix/static/js/2.e9415a26.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4a805ee5.js",
-    "static/js/2.982813fe.chunk.js",
+    "static/js/2.e9415a26.chunk.js",
     "static/css/main.1f9fb01e.chunk.css",
-    "static/js/main.a9d272e4.chunk.js"
+    "static/js/main.e0137d72.chunk.js"
   ]
 }
